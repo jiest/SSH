@@ -1,0 +1,48 @@
+#注意不要用tab按键，而是要用空格键隔开
+#注意不要用tab按键，而是要用空格键隔开
+#注意不要用tab按键，而是要用空格键隔开
+#注意不要用tab按键，而是要用空格键隔开
+#注意不要用tab按键，而是要用空格键隔开
+spring:
+    datasource:
+        name: logistic
+        url: jdbc:mysql://xyl_masterdb.56xyl.com:3306/logistic
+        username: devops
+        password: 2wsx#EDC
+        # 使用druid数据源
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        filters: stat
+        maxActive: 20
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
+    activemq: 
+        broker-url: tcp://mq.56xyl.com:61616
+        user: admin
+        password: admin
+        pool:
+            enabled: true
+            max-connections: 50
+            expiry-timeout: 10000
+            idle-timeout: 30000    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
